@@ -121,23 +121,23 @@
  <div class="w3-col-padding w3-section">
 
  <!-- BOTTOM PORTRAIT IMAGES -->
- <div class="w3-col s3" style="transform: translate(0%, -69%)">
+ <div class="w3-col s3" style="transform: translate(0%, -42%)">
  <img id="0-00" class="0demo w3-opacity w3-hover-opacity-off contain" src="" style="width:90%;cursor:pointer" onclick="currentDiv0(1)">
  </div>
 
- <div class="w3-col s2" style="transform: translate(0%, -69%)">
+ <div class="w3-col s2" style="transform: translate(0%, -42%)">
  <img id="0-01" class="0demo w3-opacity w3-hover-opacity-off contain" src="" style="width:90%;cursor:pointer" onclick="currentDiv0(2)">
  </div>
 
- <div class="w3-col s3" style="transform: translate(0%, -69%)">
+ <div class="w3-col s3" style="transform: translate(0%, -42%)">
  <img id="0-02" class="0demo w3-opacity w3-hover-opacity-off contain" src="" style="width:90%;cursor:pointer" onclick="currentDiv0(3)">
  </div>
 
- <div class="w3-col s2" style="transform: translate(0%, -69%)">
+ <div class="w3-col s2" style="transform: translate(0%, -42%)">
  <img id="0-03" class="0demo w3-opacity w3-hover-opacity-off contain" src="" style="width:90%;cursor:pointer" onclick="currentDiv0(4)">
  </div>
 
- <div class="w3-col s2" style="transform: translate(0%, -69%)">
+ <div class="w3-col s2" style="transform: translate(0%, -42%)">
  <img id="0-04" class="0demo w3-opacity w3-hover-opacity-off contain" src="" style="width:90%;cursor:pointer" onclick="currentDiv0(5)">
  </div>
  <!-- END OF PORTRAIT IMAGES -->
@@ -155,13 +155,18 @@
  <!-- LEFT TEXTS -->
  <div id="second0" style="transform: translate(-10%, 0%);">
  <div class="align-left" style="margin-top: 69px">
- <h1 id="imageTitle0" class="align-left">HEADSHOT</h1>
- <p id="price0" style="margin-top: 18px">XX - XX USD </p>
+ <h1 id="price0" style="margin-top: 29px; transform: translate(0%, 42%); font-size:36px">PRICE</h1>
+ <h1 style="margin-top: -42px; margin-left: 269px; font-size:36px">ADD ON</h1>
+<hr style="width:100%;text-align:left;margin-top:-0px">
  </div>
 
- <div class="align-left" style="margin-top: 42px">
- <p id="imageDescription0-1">With Background</p>
- <p id="imageDescription0-2">+XX USD</p>
+ <div class="align-left" style="margin-top: 21px">
+ <p id="imageDescription0-1">HeadShot: $40</p>
+  <p id="imageDescription0-1" style="margin-top: -36px; margin-left: 221px">+$10 to $30 for complexity</p>
+ <p id="imageDescription0-2" style="margin-top: 50px">Half Body: $50</p>
+   <p id="imageDescription0-1" style="margin-top: -38px; margin-left: 242px">+$10 with background</p>
+   
+    <p id="imageDescription0-2" style="margin-top: 50px">Full Body: $60</p>
  </div>
 
  </div> <!-- END OF TEXTS -->
@@ -178,20 +183,20 @@
  </div> <!-- END OF MODAL -->
 
  <script>
- var firstDescription0_1 = "WITH BACKGROUND";
- var firstDescription0_2 = "+XX USD";
+//  var firstDescription0_1 = "WITH BACKGROUND";
+//  var firstDescription0_2 = "+XX USD";
 
- var secondDescription0_1 = "WITH BACKGROUND";
- var secondDescription0_2 = "+XX USD";
+//  var secondDescription0_1 = "WITH BACKGROUND";
+//  var secondDescription0_2 = "+XX USD";
 
- var thirdDescription0_1 = "WITH BACKGROUND";
- var thirdDescription0_2 = "+XX USD";
+//  var thirdDescription0_1 = "WITH BACKGROUND";
+//  var thirdDescription0_2 = "+XX USD";
 
- var fourthDescription0_1 = "";
- var fourthDescription0_2 = "";
+//  var fourthDescription0_1 = "";
+//  var fourthDescription0_2 = "";
 
- var fifthDescription0_1 = "";
- var fifthDescription0_2 = "";
+//  var fifthDescription0_1 = "";
+//  var fifthDescription0_2 = "";
 
  var price0_1 = "69 - 69 USD";
  var price0_2 = "29 - 29 USD";
@@ -263,7 +268,8 @@
  var slideIndex0 = 1;
  showDivs0(slideIndex0);
 
- function plusDivs0(n) {
+ function plusDivs0(n) 
+ {
 
     showDivs0(slideIndex0 += n);
  }
@@ -291,33 +297,33 @@
  console.log("0_divs " + n);
  console.log("0_slideIndex0 " + slideIndex0);
 
- if (slideIndex0 == 1) 
- {
- document.getElementById("imageTitle0").innerHTML = "HEADSHOT11";
- document.getElementById("price0").innerHTML = price0_1;
- document.getElementById("imageDescription0-1").innerHTML = firstDescription0_1;
- document.getElementById("imageDescription0-2").innerHTML = firstDescription0_2;
- } else if (slideIndex0 == 2) {
- document.getElementById("imageTitle0").innerHTML = "HEADSHOT";
- document.getElementById("price0").innerHTML = price0_2;
- document.getElementById("imageDescription0-1").innerHTML = secondDescription0_1;
- document.getElementById("imageDescription0-2").innerHTML = secondDescription0_2;
- } else if (slideIndex0 == 3) {
- document.getElementById("imageTitle0").innerHTML = "ARMS/HANDS INCLUDED";
- document.getElementById("price0").innerHTML = price0_3;
- document.getElementById("imageDescription0-1").innerHTML = thirdDescription0_1;
- document.getElementById("imageDescription0-2").innerHTML = thirdDescription0_2;
- } else if (slideIndex0 == 4) {
- document.getElementById("imageTitle0").innerHTML = "WITH BACKGROUND";
- document.getElementById("price0").innerHTML = price0_4;
- document.getElementById("imageDescription0-1").innerHTML = fourthDescription0_1;
- document.getElementById("imageDescription0-2").innerHTML = fourthDescription0_2;
- } else if (slideIndex0 == 5) {
- document.getElementById("imageTitle0").innerHTML = "WITH SIDE CHARACTER";
- document.getElementById("price0").innerHTML = price0_5;
- document.getElementById("imageDescription0-1").innerHTML = fifthDescription0_1;
- document.getElementById("imageDescription0-2").innerHTML = fifthDescription0_2;
- }
+//  if (slideIndex0 == 1) 
+//  {
+//  document.getElementById("imageTitle0").innerHTML = "HEADSHOT01";
+//  document.getElementById("price0").innerHTML = price0_1;
+//  document.getElementById("imageDescription0-1").innerHTML = firstDescription0_1;
+//  document.getElementById("imageDescription0-2").innerHTML = firstDescription0_2;
+//  } else if (slideIndex0 == 2) {
+//  document.getElementById("imageTitle0").innerHTML = "HEADSHOT02";
+//  document.getElementById("price0").innerHTML = price0_2;
+//  document.getElementById("imageDescription0-1").innerHTML = secondDescription0_1;
+//  document.getElementById("imageDescription0-2").innerHTML = secondDescription0_2;
+//  } else if (slideIndex0 == 3) {
+//  document.getElementById("imageTitle0").innerHTML = "ARMS/HANDS INCLUDED";
+//  document.getElementById("price0").innerHTML = price0_3;
+//  document.getElementById("imageDescription0-1").innerHTML = thirdDescription0_1;
+//  document.getElementById("imageDescription0-2").innerHTML = thirdDescription0_2;
+//  } else if (slideIndex0 == 4) {
+//  document.getElementById("imageTitle0").innerHTML = "WITH BACKGROUND";
+//  document.getElementById("price0").innerHTML = price0_4;
+//  document.getElementById("imageDescription0-1").innerHTML = fourthDescription0_1;
+//  document.getElementById("imageDescription0-2").innerHTML = fourthDescription0_2;
+//  } else if (slideIndex0 == 5) {
+//  document.getElementById("imageTitle0").innerHTML = "WITH SIDE CHARACTER";
+//  document.getElementById("price0").innerHTML = price0_5;
+//  document.getElementById("imageDescription0-1").innerHTML = fifthDescription0_1;
+//  document.getElementById("imageDescription0-2").innerHTML = fifthDescription0_2;
+//  }
  }
 
  </script>
