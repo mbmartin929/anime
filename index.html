@@ -3,9 +3,18 @@
  <title>W3.CSS</title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <!-- Needed -->
+     <link type="text/css" href="css/demo.css" rel="stylesheet" media="screen" />
+     <link
+       type="text/css"
+       href="css/basic.css"
+       rel="stylesheet"
+       media="screen"
+     />
+     <!-- Needed -->
 
  <style>
-     
+  
  .scale-down 
  {
  object-fit: scale-down;
@@ -101,12 +110,6 @@
  text-align: left;
  }
 
- .portrait
- {
-     position:relative;
-     z-index: -1;
- }
-
  </style>
 
  <body>
@@ -117,11 +120,11 @@
  <div class='container'>
  <div id="first0">
  <div class="w3-content" style="max-width:1200px;">
- <img id="0-0" class="0mySlides scale-down portrait" src="" style="width:100%;cursor:pointer;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
- <img id="0-1" class="0mySlides scale-down portrait" src="" style="width:100%;cursor:pointer;display:none;height:529px" onclick="onClick0(this)" class="w3-hover-opacity">
- <img id="0-2" class="0mySlides scale-down portrait" src="" style="width:100%;cursor:pointer;display:none;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
- <img id="0-3" class="0mySlides scale-down portrait" src="" style="width:100%;cursor:pointer;display:none;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
- <img id="0-4" class="0mySlides scale-down portrait" src="" style="width:100%;cursor:pointer;display:none;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
+ <img id="0-0" class="0mySlides scale-down" src="" style="width:100%;cursor:pointer;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
+ <img id="0-1" class="0mySlides scale-down" src="" style="width:100%;cursor:pointer;display:none;height:529px" onclick="onClick0(this)" class="w3-hover-opacity">
+ <img id="0-2" class="0mySlides scale-down" src="" style="width:100%;cursor:pointer;display:none;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
+ <img id="0-3" class="0mySlides scale-down" src="" style="width:100%;cursor:pointer;display:none;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
+ <img id="0-4" class="0mySlides scale-down" src="" style="width:100%;cursor:pointer;display:none;height:529px;" onclick="onClick0(this)" class="w3-hover-opacity">
 
 
  <div class="w3-col-padding w3-section">
@@ -180,14 +183,19 @@
  </div>
 
  <!-- MODAL -->
- <div id="modal0-01" class="w3-modal" onclick="this.style.display='none'">
+ <div id="modal0-01" class="basic" onclick="this.style.display='none'">
  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
 
  <div class="w3-animate-zoom w3-center">
- <img id="img0-01" class="image"/>
+ <img id="img0-01" class="image">
  </div>
  </div> <!-- END OF MODAL -->
 
+    <!-- Load jQuery, SimpleModal and Basic JS files -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.simplemodal.js"></script>
+    <script type="text/javascript" src="js/basic.js"></script>
+    
  <script>
 //  var firstDescription0_1 = "WITH BACKGROUND";
 //  var firstDescription0_2 = "+XX USD";
