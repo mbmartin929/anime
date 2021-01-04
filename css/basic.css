@@ -21,18 +21,28 @@
 /* Container */
 
 #simplemodal-container {
+    display: inline-block;
     height: auto;
     width: 100%;
+    overflow: hidden;
+}
+
+#simplemodal-container .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 27%;
 }
 
 #simplemodal-container .simplemodal-data {
-    padding: 8px;
+    padding: 0px;
 }
 
 #simplemodal-container code {
     background: #141414;
     border-left: 3px solid #65B43D;
-    color: #bbb;
+    color: none;
     display: block;
     font-size: 12px;
     margin-bottom: 12px;
@@ -40,7 +50,7 @@
 }
 
 #simplemodal-container a {
-    color: #ddd;
+    color: none;
 }
 
 #simplemodal-container a.modalCloseImg {
@@ -56,5 +66,5 @@
 }
 
 #simplemodal-container h3 {
-    color: #84b8d9;
+    color: none;
 }
