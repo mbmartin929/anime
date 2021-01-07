@@ -346,6 +346,30 @@
         document.getElementById("img0-01").src = element.src;
 
         document.getElementById("modal0-01").style.display = "block";
+
+        if (element.id == "0-2") {
+          console.log("hehe");
+          document.getElementById("img0-01").style.transform =
+            "translateY(-2%)";
+          document.getElementById("img0-01").style.maxHeight = "91vh";
+          document.getElementById("img0-01").style.maxWidth = "100%";
+        } else if (element.id == "0-1") {
+          document.getElementById("img0-01").style.maxWidth = "100%";
+          document.getElementById("img0-01").style.maxHeight = "75vh";
+          document.getElementById("img0-01").style.transform = "translateY(0%)";
+        } else if (element.id == "0-0") {
+          document.getElementById("img0-01").style.maxWidth = "100%";
+          document.getElementById("img0-01").style.maxHeight = "100vh";
+          document.getElementById("img0-01").style.transform = "translateY(0%)";
+        } else if (element.id == "0-4") {
+          document.getElementById("img0-01").style.maxWidth = "100%";
+          document.getElementById("img0-01").style.maxHeight = "96vh";
+          document.getElementById("img0-01").style.transform = "translateY(0%)";
+        } else if (element.id == "0-3") {
+          document.getElementById("img0-01").style.maxWidth = "100%";
+          document.getElementById("img0-01").style.maxHeight = "100vh";
+          document.getElementById("img0-01").style.transform = "translateY(0%)";
+        }
       }
 
       var slideIndex0 = 1;
